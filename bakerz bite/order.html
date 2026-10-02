@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description">  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order here — Bakerz Bite</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="offers">
+
+<div class="nav-scrim" id="scrim"></div>
+
+<header class="nav" id="siteNav">
+  <div class="wrap nav-inner">
+    <a href="home.html" target="_blank" class="brand">
+  <img src="pictures/logos/brand-logo.png" height="60px" alt="brand-logo">
+  <span class="brand-word">Bakerz <em>Bite</em></span>
+</a>
+    
+            <ul class="nav-links" id="navLinks">
+      <li><a href="home.html" data-nav data-page="home" target="_blank">Home</a></li>
+      <li><a href="menu.html" data-nav data-page="menu" target="_blank">Menu</a></li>
+      <li><a href="offers.html" data-nav data-page="offers" target="_blank">Offers</a></li>
+      <li><a href="about.html" data-nav data-page="about" target="_blank">About</a></li>
+      <li><a href="FAQ.html" data-nav data-page="about" target="_blank">FAQ's</a></li>
+      <li><a href="contact.html" data-nav data-page="contact" target="_blank">Contact</a></li>
+      <li><a href="order.html" data-nav data-page="order">Order Now</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <b><i>Theme</i></b>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <img src="pictures/logos/dark-theme.png" alt="dark mode">
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+  <!-- Paste this just under your navbar (or in the footer) -->
+<div class="info-bar">
+  <p class="info-item" id="greeting">Welcome to Bakerz Bite</p>
+  <p class="info-item" id="date-time">Loading time...</p>
+  <p class="info-item" id="location-text">Location not shared yet</p>
+  <button class="info-btn" id="location-btn">Use my location</button>
+</div>
+</header>
+<!-- ============ ORDER NOW ============ -->
+<section class="section" id="order">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Order now</span>
+      <h2>Tell us what you're craving.</h2>
+      <p>Fill this in and our counter team will call to confirm within the hour.</p>
+    </div>
+
+    <form class="order-form" id="orderForm" novalidate>
+
+      <div class="order-toggle" role="radiogroup" aria-label="Order type">
+        <input type="radio" name="fulfilment" id="fulfil-pickup" value="pickup" checked>
+        <label for="fulfil-pickup">Pickup</label>
+        <input type="radio" name="fulfilment" id="fulfil-delivery" value="delivery">
+        <label for="fulfil-delivery">Delivery</label>
+      </div>
+
+      <div class="order-row">
+        <div class="field">
+          <label for="ord-name">Full name</label>
+          <input type="text" id="ord-name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="field">
+          <label for="ord-phone">Phone number</label>
+          <input type="tel" id="ord-phone" name="phone" placeholder="03xx-xxxxxxx" required>
+        </div>
+      </div>
+
+      <div class="field" id="addressField" hidden>
+        <label for="ord-address">Delivery address</label>
+        <input type="text" id="ord-address" name="address" placeholder="House no., street, area">
+      </div>
+
+      <div class="order-row">
+        <div class="field">
+          <label for="ord-category">Category</label>
+          <select id="ord-category" name="category" required>
+            <option value="" disabled selected>Choose a category</option>
+            <option>Cakes</option>
+            <option>Pastries</option>
+            <option>Cookies</option>
+            <option>Pies</option>
+            <option>Desserts</option>
+            <option>Beverages</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="ord-item">Item</label>
+          <input type="text" id="ord-item" name="item" placeholder="e.g. Belgian Chocolate Truffle" required>
+        </div>
+      </div>
+
+      <div class="order-row">
+        <div class="field field-qty">
+          <label for="ord-qty">Quantity</label>
+          <input type="number" id="ord-qty" name="quantity" min="1" value="1" required>
+        </div>
+        <div class="field">
+          <label for="ord-date">Preferred date</label>
+          <input type="date" id="ord-date" name="date" required>
+        </div>
+        <div class="field">
+          <label for="ord-time">Preferred time</label>
+          <select id="ord-time" name="time" required>
+            <option value="" disabled selected>Select a slot</option>
+            <option>9:00 AM – 11:00 AM</option>
+            <option>11:00 AM – 1:00 PM</option>
+            <option>1:00 PM – 3:00 PM</option>
+            <option>3:00 PM – 5:00 PM</option>
+            <option>5:00 PM – 7:00 PM</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="ord-notes">Special instructions <span class="optional">(optional)</span></label>
+        <textarea id="ord-notes" name="notes" rows="3" placeholder="A message on the cake, allergy notes, anything else we should know"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-lg order-submit">Place order</button>
+      <p class="order-confirm" id="orderConfirm" hidden>Thanks — your order's in. We'll call you shortly to confirm.</p>
+    </form>
+  </div>
+</section>
+
+
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <span class="brand-word">Bakerz <em>Bite</em></span>
+      <p>Premium baked goods, made fresh daily with real butter, real cream and unbleached flour.</p>
+    </div>
+    <div>
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="pictures/sitemap/bakerz-bite-sitemap-themed.png"> Our Sitemap</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div style="display: flex; gap: 10px;">
+        <a href="https://www.instagram.com" aria-label="Instagram" target="_blank"><img src="pictures/logos/insta.png"  height="20px" alt=""></a>
+        <a href="https://www.facebook.com" aria-label="Facebook" target="_blank"><img src="pictures/logos/fb.png" height="20px"  alt=""></a>
+        <a href="https://www.X.com" aria-label="X" target="_blank"><img src="pictures/logos/X.PNG" height="20px" alt=""></a>
+        </div>
+       </ul>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul>
+        <li>hello@bakerzbite.com</li>
+        <li>+92 300 0000000</li>
+        <li>Karachi, Pakistan</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© <span id="year"></span> Bakerz Bite. All rights reserved.</span>
+    <span>Where Smiles Are Served Daily.</span>
+  </div>
+</footer>
+
+<script src="bakerz.js"></script>
+</body>
+</html>

@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bakerz Bite — Where Smiles Are Served Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body data-page="home">
+
+<div class="nav-scrim" id="scrim"></div>
+
+<header class="nav" id="siteNav">
+  <div class="wrap nav-inner">
+    <a href="home.html" target="_blank" class="brand">
+  <img src="pictures/logos/brand-logo.png" height="60px" alt="brand-logo">
+  <span class="brand-word">Bakerz <em>Bite</em></span>
+</a>
+    
+            <ul class="nav-links" id="navLinks">
+      <li><a href="home.html" data-nav data-page="home" target="_blank">Home</a></li>
+      <li><a href="menu.html" data-nav data-page="menu" target="_blank">Menu</a></li>
+      <li><a href="offers.html" data-nav data-page="offers" target="_blank">Offers</a></li>
+      <li><a href="about.html" data-nav data-page="about" target="_blank">About</a></li>
+      <li><a href="FAQ.html" data-nav data-page="about" target="_blank">FAQ's</a></li>
+      <li><a href="contact.html" data-nav data-page="contact" target="_blank">Contact</a></li>
+      <li><a href="order.html" data-nav data-page="order">Order Now</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <b><i>Theme</i></b>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <img src="pictures/logos/dark-theme.png" alt="dark mode">
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+  <!-- Paste this just under your navbar (or in the footer) -->
+<div class="info-bar">
+  <p class="info-item" id="greeting">Welcome to Bakerz Bite</p>
+  <p class="info-item" id="date-time">Loading time...</p>
+  <p class="info-item" id="location-text">Location not shared yet</p>
+  <button class="info-btn" id="location-btn">Use my location</button>
+</div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+
+    <!-- LEFT SIDE: TEXT -->
+    <div class="hero-content">
+      <span class="hero-eyebrow">
+        Baked fresh, every single morning
+      </span>
+
+      <h1>
+        Where smiles are <br>
+        <span class="script">served daily.</span>
+      </h1>
+
+      <p class="hero-sub">
+        Real butter. Real cream. Unbleached flour. Every cake,
+        pastry and pie leaving our kitchen is something we'd
+        happily serve our own family — nothing less.
+      </p>
+
+      <div class="hero-cta">
+        <a href="menu.html" class="btn btn-jam">
+          Explore Our Menu
+        </a>
+
+        <a href="offers.html" class="btn btn-outline">
+          View Today's Offers
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE: IMAGE -->
+    <div class="hero-art">
+      <img src="pictures/logos/hero.png" alt="Bakerz Bite bakery">
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ============ MENU / CATALOG ============ -->
+<section class="section" id="menu">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Our menu</span>
+      <h2>Freshly baked, always.</h2>
+      <p>Every item below is prepared in-house the same day it's sold. Filter by category, dietary need or price to find your next favourite.</p>
+    </div>
+
+    <div class="catalog-controls">
+      <div class="cat-pills" id="catPills">
+        <button class="cat-pill active" data-cat="All">All</button><button class="cat-pill" data-cat="Cakes">Cakes</button><button class="cat-pill" data-cat="Pastries">Pastries</button><button class="cat-pill" data-cat="Cookies">Cookies</button><button class="cat-pill" data-cat="Pies">Pies</button><button class="cat-pill" data-cat="Desserts">Desserts</button><button class="cat-pill" data-cat="Beverages">Beverages</button>
+      </div>
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="search" id="searchInput" placeholder="Search the menu…" aria-label="Search products">
+      </div>
+    </div>
+    <div class="filter-row">
+      <select class="filter-select" id="sortSelect">
+        <option value="default">Sort: Featured</option>
+        <option value="price-low">Price: Low to High</option>
+        <option value="price-high">Price: High to Low</option>
+        <option value="name">Name: A–Z</option>
+      </select>
+      <select class="filter-select" id="badgeSelect">
+        <option value="all">All items</option>
+        <option value="bestseller">Bestsellers</option>
+        <option value="new">New arrivals</option>
+        <option value="popular">Most popular</option>
+      </select>
+    </div>
+
+
+<div class="grid" id="productGrid">
+
+  <!-- Product 1 -->
+  <article class="card" data-id="1" tabindex="0" role="button" aria-label="View details for Belgian Chocolate Truffle">
+    <div class="card-media">
+      <div class="card-badges"><span class="pill pill-best">Bestseller</span></div>
+      <img src="pictures/cakes/Belgian Chocolate Truffle.png" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Belgian Chocolate Truffle</h3>
+        <span class="card-price">Rs. 2,600</span>
+      </div>
+      <p class="card-desc">Dense dark-chocolate sponge layered with truffle ganache and a mirror glaze.</p>
+      <div class="card-foot">
+        <span class="card-cat">Cakes</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 2 -->
+  <article class="card" data-id="2" tabindex="0" role="button" aria-label="View details for Red Velvet Dream">
+    <div class="card-media">
+      <div class="card-badges"><span class="pill pill-pop">Popular</span></div>
+      <img src="pictures/cakes/Red Velvet Dream cake.PNG" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Red Velvet Dream</h3>
+        <span class="card-price">Rs. 2,400</span>
+      </div>
+      <p class="card-desc">Cocoa-kissed red velvet with tangy cream-cheese frosting between every layer.</p>
+      <div class="card-foot">
+        <span class="card-cat">Cakes</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 3 -->
+  <article class="card" data-id="3" tabindex="0" role="button" aria-label="View details for Classic Vanilla Bean">
+    <div class="card-media">
+      <div class="card-badges"></div>
+      <img src="pictures/cakes/Classic Vanilla Bean cake.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Classic Vanilla Bean</h3>
+        <span class="card-price">Rs. 2,200</span>
+      </div>
+      <p class="card-desc">Madagascar vanilla bean sponge with silky Swiss meringue buttercream.</p>
+      <div class="card-foot">
+        <span class="card-cat">Cakes</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 4 -->
+  <article class="card" data-id="4" tabindex="0" role="button" aria-label="View details for Salted Caramel Cake">
+    <div class="card-media">
+      <div class="card-badges"><span class="pill pill-new">New</span></div>
+      <img src="pictures/cakes/Salted Caramel Cake.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Salted Caramel Cake</h3>
+        <span class="card-price">Rs. 2,700</span>
+      </div>
+      <p class="card-desc">Brown-butter sponge, house salted caramel, and a caramel drip finish.</p>
+      <div class="card-foot">
+        <span class="card-cat">Cakes</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 5 -->
+  <article class="card" data-id="5" tabindex="0" role="button" aria-label="View details for Pistachio Rose Cake">
+    <div class="card-media">
+      <div class="card-badges"><span class="pill pill-new">New</span></div>
+      <img src="pictures/cakes/Pistachio Rose Cake.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Pistachio Rose Cake</h3>
+        <span class="card-price">Rs. 2,900</span>
+      </div>
+      <p class="card-desc">Ground pistachio sponge with a whisper of rosewater and mascarpone cream.</p>
+      <div class="card-foot">
+        <span class="card-cat">Cakes</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 6 -->
+  <article class="card" data-id="6" tabindex="0" role="button" aria-label="View details for Lotus Biscoff Cake">
+    <div class="card-media">
+      <div class="card-badges"><span class="pill pill-best">Bestseller</span></div>
+      <img src="pictures/cakes/Lotus Biscoff Cake.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Lotus Biscoff Cake</h3>
+        <span class="card-price">Rs. 2,800</span>
+      </div>
+      <p class="card-desc">Spiced Biscoff sponge, cookie-butter cream, crushed biscuit crumble.</p>
+      <div class="card-foot">
+        <span class="card-cat">Cakes</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 7 -->
+  <article class="card" data-id="7" tabindex="0" role="button" aria-label="View details for Butter Croissant">
+    <div class="card-media">
+      <div class="card-badges"><span class="pill pill-best">Bestseller</span></div>
+      <img src="pictures/pastries/Butter-Croissant-pastry.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Butter Croissant</h3>
+        <span class="card-price">Rs. 280</span>
+      </div>
+      <p class="card-desc">Laminated 36 hours for a shatter-crisp shell and a soft, buttery crumb.</p>
+      <div class="card-foot">
+        <span class="card-cat">Pastries</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 8 -->
+  <article class="card" data-id="8" tabindex="0" role="button" aria-label="View details for Pain au Chocolat">
+    <div class="card-media">
+      <div class="card-badges"><span class="pill pill-pop">Popular</span></div>
+      <img src="pictures/pastries/Pain-au-Chocolat-pastry.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Chocolate Croissant</h3>
+        <span class="card-price">Rs. 320</span>
+      </div>
+      <p class="card-desc">Our croissant dough wrapped around two batons of dark chocolate.</p>
+      <div class="card-foot">
+        <span class="card-cat">Pastries</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 9 -->
+  <article class="card" data-id="9" tabindex="0" role="button" aria-label="View details for Almond Danish">
+    <div class="card-media">
+      <div class="card-badges"></div>
+      <img src="pictures/pastries/Almond-Danish-pastry.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Almond Danish</h3>
+        <span class="card-price">Rs. 350</span>
+      </div>
+      <p class="card-desc">Flaky danish pastry filled with frangipane and toasted almond flakes.</p>
+      <div class="card-foot">
+        <span class="card-cat">Pastries</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 10 -->
+  <article class="card" data-id="10" tabindex="0" role="button" aria-label="View details for Cinnamon Roll">
+    <div class="card-media">
+      <div class="card-badges"><span class="pill pill-new">New</span></div>
+      <img src="pictures/pastries/Cinnamon-Roll-pastry.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Cinnamon Roll</h3>
+        <span class="card-price">Rs. 380</span>
+      </div>
+      <p class="card-desc">Soft-baked roll swirled with brown-sugar cinnamon, finished with cream-cheese icing.</p>
+      <div class="card-foot">
+        <span class="card-cat">Pastries</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 11 -->
+  <article class="card" data-id="11" tabindex="0" role="button" aria-label="View details for Fresh Fruit Tart">
+    <div class="card-media">
+      <div class="card-badges"></div>
+      <img src="pictures/pastries/Fresh-Fruit-Tart-pastry.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Fresh Fruit Tart</h3>
+        <span class="card-price">Rs. 420</span>
+      </div>
+      <p class="card-desc">Buttery tart shell, vanilla pastry cream, and a mosaic of seasonal fruit.</p>
+      <div class="card-foot">
+        <span class="card-cat">Pastries</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 12 -->
+  <article class="card" data-id="12" tabindex="0" role="button" aria-label="View details for Classic Éclair">
+    <div class="card-media">
+      <div class="card-badges"></div>
+      <img src="pictures/pastries/Classic-Éclair-pastry.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Classic Eclair</h3>
+        <span class="card-price">Rs. 340</span>
+      </div>
+      <p class="card-desc">Choux pastry piped with vanilla cream and dipped in dark chocolate glaze.</p>
+      <div class="card-foot">
+        <span class="card-cat">Pastries</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 13 -->
+  <article class="card" data-id="13" tabindex="0" role="button" aria-label="View details for Classic Chocolate Chip">
+    <div class="card-media">
+      <div class="card-badges"><span class="pill pill-best">Bestseller</span></div>
+      <img src="pictures/cookies/Classic-Chocolate-Chip-cookies.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Classic Chocolate Chip</h3>
+        <span class="card-price">Rs. 180</span>
+      </div>
+      <p class="card-desc">Crisp edges, gooey centre, loaded with semi-sweet chocolate chunks.</p>
+      <div class="card-foot">
+        <span class="card-cat">Cookies</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 14 -->
+  <article class="card" data-id="14" tabindex="0" role="button" aria-label="View details for Double Chocolate Fudge">
+    <div class="card-media">
+      <div class="card-badges"><span class="pill pill-pop">Popular</span></div>
+      <img src="pictures/cookies/Double-Chocolate-Fudge-cookies.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Double Chocolate Fudge</h3>
+        <span class="card-price">Rs. 200</span>
+      </div>
+      <p class="card-desc">Cocoa dough studded with dark and milk chocolate chunks.</p>
+      <div class="card-foot">
+        <span class="card-cat">Cookies</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 15 -->
+  <article class="card" data-id="15" tabindex="0" role="button" aria-label="View details for Oatmeal Raisin">
+    <div class="card-media">
+      <div class="card-badges"></div>
+      <img src="pictures/cookies/Oatmeal-Raisin-cookies.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Oatmeal Raisin</h3>
+        <span class="card-price">Rs. 170</span>
+      </div>
+      <p class="card-desc">Chewy rolled oats, plump raisins, and a hint of cinnamon.</p>
+      <div class="card-foot">
+        <span class="card-cat">Cookies</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 16 -->
+  <article class="card" data-id="16" tabindex="0" role="button" aria-label="View details for Classic Shortbread">
+    <div class="card-media">
+      <div class="card-badges"></div>
+      <img src="pictures/cookies/Classic-Shortbread-cookies.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Classic Shortbread</h3>
+        <span class="card-price">Rs. 160</span>
+      </div>
+      <p class="card-desc">Three-ingredient simplicity: real butter, sugar, and unbleached flour.</p>
+      <div class="card-foot">
+        <span class="card-cat">Cookies</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 17 -->
+  <article class="card" data-id="17" tabindex="0" role="button" aria-label="View details for Snickerdoodle">
+    <div class="card-media">
+      <div class="card-badges"><span class="pill pill-new">New</span></div>
+      <img src="pictures/cookies/Snickerdoodle-cookies.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Snickerdoodle</h3>
+        <span class="card-price">Rs. 170</span>
+      </div>
+      <p class="card-desc">Soft cinnamon-sugar cookie with a delicate crackled top.</p>
+      <div class="card-foot">
+        <span class="card-cat">Cookies</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 18 -->
+  <article class="card" data-id="18" tabindex="0" role="button" aria-label="View details for White Chocolate Macadamia">
+    <div class="card-media">
+      <div class="card-badges"></div>
+      <img src="pictures/cookies/White-Chocolate-Macadamia-cookies.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>White Chocolate Macadamia</h3>
+        <span class="card-price">Rs. 210</span>
+      </div>
+      <p class="card-desc">Buttery dough packed with white chocolate and roasted macadamia.</p>
+      <div class="card-foot">
+        <span class="card-cat">Cookies</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 19 -->
+  <article class="card" data-id="19" tabindex="0" role="button" aria-label="View details for Apple Cinnamon Pie">
+    <div class="card-media">
+      <div class="card-badges"><span class="pill pill-best">Bestseller</span></div>
+      <img src="pictures/pies/Apple-Cinnamon-Pie.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Apple Cinnamon Pie</h3>
+        <span class="card-price">Rs. 1,900</span>
+      </div>
+      <p class="card-desc">Tart baking apples, warm cinnamon, all-butter lattice crust.</p>
+      <div class="card-foot">
+        <span class="card-cat">Pies</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 20 -->
+  <article class="card" data-id="20" tabindex="0" role="button" aria-label="View details for Southern Pecan Pie">
+    <div class="card-media">
+      <div class="card-badges"></div>
+      <img src="pictures/pies/Southern-Pecan-Pie.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Southern Pecan Pie</h3>
+        <span class="card-price">Rs. 2,100</span>
+      </div>
+      <p class="card-desc">Toasted pecans set in a rich brown-sugar custard filling.</p>
+      <div class="card-foot">
+        <span class="card-cat">Pies</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 21 -->
+  <article class="card" data-id="21" tabindex="0" role="button" aria-label="View details for Lemon Meringue Pie">
+    <div class="card-media">
+      <div class="card-badges"><span class="pill pill-pop">Popular</span></div>
+      <img src="pictures/pies/Lemon-Meringue-Pie.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Lemon Meringue Pie</h3>
+        <span class="card-price">Rs. 2,000</span>
+      </div>
+      <p class="card-desc">Bright lemon curd beneath a torched Italian meringue cloud.</p>
+      <div class="card-foot">
+        <span class="card-cat">Pies</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 22 -->
+  <article class="card" data-id="22" tabindex="0" role="button" aria-label="View details for Pumpkin Spice Pie">
+    <div class="card-media">
+      <div class="card-badges"><span class="pill pill-new">New</span></div>
+      <img src="pictures/pies/Pumpkin-Spice-Pie.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Pumpkin Spice Pie</h3>
+        <span class="card-price">Rs. 1,950</span>
+      </div>
+      <p class="card-desc">Silky spiced pumpkin custard in a flaky all-butter crust.</p>
+      <div class="card-foot">
+        <span class="card-cat">Pies</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 23 -->
+  <article class="card" data-id="23" tabindex="0" role="button" aria-label="View details for Classic Tiramisu Cup">
+    <div class="card-media">
+      <div class="card-badges"><span class="pill pill-best">Bestseller</span></div>
+      <img src="pictures/desserts/Classic Tiramisu Cup.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Classic Tiramisu Cup</h3>
+        <span class="card-price">Rs. 520</span>
+      </div>
+      <p class="card-desc">Espresso-soaked ladyfingers layered with mascarpone cream and cocoa.</p>
+      <div class="card-foot">
+        <span class="card-cat">Desserts</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 24 -->
+  <article class="card" data-id="24" tabindex="0" role="button" aria-label="View details for Dark Chocolate Mousse">
+    <div class="card-media">
+      <div class="card-badges"></div>
+      <img src="pictures/desserts/Dark-Chocolate-Mousse.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Dark Chocolate Mousse</h3>
+        <span class="card-price">Rs. 480</span>
+      </div>
+      <p class="card-desc">Airy 70% dark chocolate mousse with a shard of tempered chocolate.</p>
+      <div class="card-foot">
+        <span class="card-cat">Desserts</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 25 -->
+  <article class="card" data-id="25" tabindex="0" role="button" aria-label="View details for Crème Brûlée">
+    <div class="card-media">
+      <div class="card-badges"><span class="pill pill-pop">Popular</span></div>
+      <img src="pictures/desserts/Crème-Brûlée.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Burnt cream</h3>
+        <span class="card-price">Rs. 500</span>
+      </div>
+      <p class="card-desc">Silky vanilla-bean custard under a torched caramel crust.</p>
+      <div class="card-foot">
+        <span class="card-cat">Desserts</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 26 -->
+  <article class="card" data-id="26" tabindex="0" role="button" aria-label="View details for New York Cheesecake">
+    <div class="card-media">
+      <div class="card-badges"></div>
+      <img src="pictures/desserts/New-York-Cheesecake.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>New York Cheesecake</h3>
+        <span class="card-price">Rs. 560</span>
+      </div>
+      <p class="card-desc">Dense, baked cheesecake on a buttery biscuit base.</p>
+      <div class="card-foot">
+        <span class="card-cat">Desserts</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 27 -->
+  <article class="card" data-id="27" tabindex="0" role="button" aria-label="View details for Vanilla Panna Cotta">
+    <div class="card-media">
+      <div class="card-badges"><span class="pill pill-new">New</span></div>
+      <img src="pictures/desserts/Vanilla-Panna-Cotta.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Vanilla Panna Cotta</h3>
+        <span class="card-price">Rs. 460</span>
+      </div>
+      <p class="card-desc">Set cream dessert with a berry compote ribbon.</p>
+      <div class="card-foot">
+        <span class="card-cat">Desserts</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 28 -->
+  <article class="card" data-id="28" tabindex="0" role="button" aria-label="View details for Signature Cappuccino">
+    <div class="card-media">
+      <div class="card-badges"><span class="pill pill-best">Bestseller</span></div>
+      <img src="pictures/beverages/Signature-Cappuccino.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Signature Cappuccino</h3>
+        <span class="card-price">Rs. 450</span>
+      </div>
+      <p class="card-desc">Double espresso, steamed milk, a thick layer of microfoam.</p>
+      <div class="card-foot">
+        <span class="card-cat">Beverages</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 29 -->
+  <article class="card" data-id="29" tabindex="0" role="button" aria-label="View details for House Cold Brew">
+    <div class="card-media">
+      <div class="card-badges"><span class="pill pill-pop">Popular</span></div>
+      <img src="pictures/beverages/House-Cold-Brew.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>House Cold Brew</h3>
+        <span class="card-price">Rs. 420</span>
+      </div>
+      <p class="card-desc">Steeped 18 hours for a smooth, low-acid finish.</p>
+      <div class="card-foot">
+        <span class="card-cat">Beverages</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 30 -->
+  <article class="card" data-id="30" tabindex="0" role="button" aria-label="View details for Belgian Hot Chocolate">
+    <div class="card-media">
+      <div class="card-badges"></div>
+      <img src="pictures/beverages/Belgian-Hot-Chocolate.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Belgian Hot Chocolate</h3>
+        <span class="card-price">Rs. 480</span>
+      </div>
+      <p class="card-desc">Melted Belgian chocolate whisked into steamed cream and milk.</p>
+      <div class="card-foot">
+        <span class="card-cat">Beverages</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 31 -->
+  <article class="card" data-id="31" tabindex="0" role="button" aria-label="View details for Karak Chai">
+    <div class="card-media">
+      <div class="card-badges"><span class="pill pill-best">Bestseller</span></div>
+      <img src="pictures/beverages/Karak-Chai.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Karak Chai</h3>
+        <span class="card-price">Rs. 250</span>
+      </div>
+      <p class="card-desc">Slow-brewed spiced milk tea, strong and sweet.</p>
+      <div class="card-foot">
+        <span class="card-cat">Beverages</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 32 -->
+  <article class="card" data-id="32" tabindex="0" role="button" aria-label="View details for Iced Caramel Latte">
+    <div class="card-media">
+      <div class="card-badges"><span class="pill pill-new">New</span></div>
+      <img src="pictures/beverages/Iced-Caramel-Latte.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Iced Caramel Latte</h3>
+        <span class="card-price">Rs. 490</span>
+      </div>
+      <p class="card-desc">Espresso over ice with house caramel and cold milk.</p>
+      <div class="card-foot">
+        <span class="card-cat">Beverages</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 33 -->
+  <article class="card" data-id="33" tabindex="0" role="button" aria-label="View details for Matcha Latte">
+    <div class="card-media">
+      <div class="card-badges"></div>
+      <img src="pictures/beverages/Matcha-Latte.jpg" alt="grid image">
+    </div>
+    <div class="card-body">
+      <div class="card-top">
+        <h3>Matcha Latte</h3>
+        <span class="card-price">Rs. 470</span>
+      </div>
+      <p class="card-desc">Ceremonial-grade matcha whisked with steamed milk.</p>
+      <div class="card-foot">
+        <span class="card-cat">Beverages</span>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+
+</div>
+    <p class="empty-state" id="emptyState" style="display:none;">No items match your filters — try clearing the search or picking a different category.</p>
+  </div>
+</section>
+
+<!-- ============ OFFERS ============ -->
+
+<section class="section" id="offers">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Today's offers</span>
+      <h2>Good deals, honestly priced.</h2>
+      <p>Rotating combos and bundles — no membership, no fine print.</p>
+    </div>
+
+    <div class="offer-grid" id="offerGrid">
+
+      <div class="offer-card">
+        <span class="offer-tag">Morning Special</span>
+        <img src="pictures/offers/croissant-danish-cappuccino..png" alt="croissant danish cappuccino.">
+        <h3>Breakfast Combo</h3>
+      
+        <p>Any croissant or danish with a signature cappuccino.</p>
+        <div class="offer-meta">
+          <span class="card-price">Rs. 950</span>
+          <span>Mon–Fri, till 11 AM</span>
+        </div>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+
+      <div class="offer-card">
+        <span class="offer-tag">Weekend</span>
+        <img src="pictures/offers/Tiramisu Cup,Dark Chocolate, Crème Brûlée, Panna Cotta.png" alt="Four handpicked desserts">
+        <h3>Weekend Dessert Box</h3>
+        <p>Four handpicked desserts, boxed and ready to share.</p>
+        <div class="offer-meta">
+          <span> <span class="card-price">Rs. 2150</span> for 4</span>
+          <span>Sat–Sun only</span>
+        </div>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+
+      <div class="offer-card">
+        <span class="offer-tag">Bundle</span>
+        <img src="pictures/offers/Buy-2-Get-1-Cookies.png" alt="any three cookies from the counter">
+        <h3>Buy 2 Get 1 — Cookies</h3>
+        <p>Mix and match any three cookies from the counter.</p>
+        <div class="offer-meta">
+         <span class="card-price">Rs. 450</span> 
+        </div>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+
+      <div class="offer-card">
+        <span class="offer-tag">Celebration</span>
+        <img src="pictures/offers/Birthday-Cake-Special.png" alt="full-size custom cake">
+        <h3>Birthday Cake Special</h3>
+        <p>20% off any full-size custom cake, ordered 48 hrs ahead.</p>
+        <div class="offer-meta">
+        <span class="card-price">Rs. 2000</span>
+          <span>With advance order</span>
+        </div>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+
+      <div class="offer-card">
+        <span class="offer-tag">Combo</span>
+        <img src="pictures/offers/Coffee-Pastry-Combo.png" alt="hot beverage paired with a pastr">
+        <h3>Coffee + Pastry Combo</h3>
+        <p>Any hot beverage paired with a pastry of your choice.</p>
+        <div class="offer-meta">
+        <span class="card-price">Rs. 700</span>
+          <span>All day, every day</span>
+        </div>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+
+      <div class="offer-card">
+        <span class="offer-tag">Seasonal</span>
+        <img src="pictures/offers/Seasonal-Harvest-Box.png" alt="pies, spiced cakes, and more.">
+        <h3>Seasonal Harvest Box</h3>
+        <p>A rotating seasonal selection — pies, spiced cakes, and more.</p>
+        <div class="offer-meta">
+          <span class="card-price">Rs. 3000</span>
+          <span>While stocks last</span>
+        </div>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="wrap about-grid">
+    <div class="about-art">
+      <img src="pictures/about/about.png" alt="about picture">
+    </div>
+    <div>
+      <span class="kicker">Our story</span>
+      <h2>Baking like family is watching.</h2>
+      <p class="motto-line">"Where Smiles Are Served Daily."</p>
+      <p>Bakerz Bite started with one rule: never put anything on the counter we wouldn't happily serve our own family. That means real butter instead of substitutes, real cream instead of stabilisers, and unbleached flour milled the way flour is supposed to be. It's a slower, more expensive way to bake — and it's the only way we do it.</p>
+      <div class="about-points">
+        <div class="about-point">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          <div><h4>Baked fresh, daily</h4><p>Nothing sits overnight. What's in the case today was made today.</p></div>
+        </div>
+        <div class="about-point">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          <div><h4>Premium, honest ingredients</h4><p>Real butter, real cream, unbleached flour — every single batch.</p></div>
+        </div>
+        <div class="about-point">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          <div><h4>Customers treated like family</h4><p>From custom cakes to quick coffee runs, you're never just an order number.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ ORDER NOW ============ -->
+<section class="section" id="order">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Order now</span>
+      <h2>Tell us what you're craving.</h2>
+      <p>Fill this in and our counter team will call to confirm within the hour.</p>
+    </div>
+
+    <form class="order-form" id="orderForm" novalidate>
+
+      <div class="order-toggle" role="radiogroup" aria-label="Order type">
+        <input type="radio" name="fulfilment" id="fulfil-pickup" value="pickup" checked>
+        <label for="fulfil-pickup">Pickup</label>
+        <input type="radio" name="fulfilment" id="fulfil-delivery" value="delivery">
+        <label for="fulfil-delivery">Delivery</label>
+      </div>
+
+      <div class="order-row">
+        <div class="field">
+          <label for="ord-name">Full name</label>
+          <input type="text" id="ord-name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="field">
+          <label for="ord-phone">Phone number</label>
+          <input type="tel" id="ord-phone" name="phone" placeholder="03xx-xxxxxxx" required>
+        </div>
+      </div>
+
+      <div class="field" id="addressField" hidden>
+        <label for="ord-address">Delivery address</label>
+        <input type="text" id="ord-address" name="address" placeholder="House no., street, area">
+      </div>
+
+      <div class="order-row">
+        <div class="field">
+          <label for="ord-category">Category</label>
+          <select id="ord-category" name="category" required>
+            <option value="" disabled selected>Choose a category</option>
+            <option>Cakes</option>
+            <option>Pastries</option>
+            <option>Cookies</option>
+            <option>Pies</option>
+            <option>Desserts</option>
+            <option>Beverages</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="ord-item">Item</label>
+          <input type="text" id="ord-item" name="item" placeholder="e.g. Belgian Chocolate Truffle" required>
+        </div>
+      </div>
+
+      <div class="order-row">
+        <div class="field field-qty">
+          <label for="ord-qty">Quantity</label>
+          <input type="number" id="ord-qty" name="quantity" min="1" value="1" required>
+        </div>
+        <div class="field">
+          <label for="ord-date">Preferred date</label>
+          <input type="date" id="ord-date" name="date" required>
+        </div>
+        <div class="field">
+          <label for="ord-time">Preferred time</label>
+          <select id="ord-time" name="time" required>
+            <option value="" disabled selected>Select a slot</option>
+            <option>9:00 AM – 11:00 AM</option>
+            <option>11:00 AM – 1:00 PM</option>
+            <option>1:00 PM – 3:00 PM</option>
+            <option>3:00 PM – 5:00 PM</option>
+            <option>5:00 PM – 7:00 PM</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="ord-notes">Special instructions <span class="optional">(optional)</span></label>
+        <textarea id="ord-notes" name="notes" rows="3" placeholder="A message on the cake, allergy notes, anything else we should know"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-lg order-submit">Place order</button>
+      <p class="order-confirm" id="orderConfirm" hidden>Thanks — your order's in. We'll call you shortly to confirm.</p>
+    </form>
+  </div>
+</section>
+
+
+
+<!-- ============ REVIEWS ============ -->
+<section class="section" id="reviews" style="background:var(--cream-2);">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Customer voices</span>
+      <h2>What people are saying.</h2>
+      <p>Real feedback from real visits — leave your own below. </p>
+    </div>
+    <div class="reviews-layout">
+      <form class="review-form" id="reviewForm" novalidate>
+        <h3>Share your experience</h3>
+        <p style="color:var(--espresso-45); font-size:.85rem;">Takes less than a minute.</p>
+        <div class="field">
+          <label for="rvName">Your name</label>
+          <input type="text" id="rvName" placeholder="e.g. M.Ashraf" maxlength="40">
+        </div>
+        <div class="field">
+          <label for="rvText">Your review</label>
+          <textarea id="rvText" placeholder="Tell us what you tried and how it went…" maxlength="400"></textarea>
+        </div>
+        <div class="field">
+          <label>Your rating</label>
+          <div class="star-input" id="starInput" role="radiogroup" aria-label="Star rating"></div>
+        </div>
+        <button type="submit" class="btn btn-jam btn-sm" style="margin-top:18px;">Submit Review</button>
+        <p class="form-msg" id="formMsg"></p>
+      </form>
+      <div class="review-list" id="reviewList">
+        <div class="review-card">
+      <div class="review-top">
+        <span class="review-name">Luqman Qayyum :</span>
+        <span class="review-stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.1 6.3 7 1-5 4.9 1.2 6.9L12 17.8l-6.3 3.3L7 14.2l-5-4.9 7-1L12 2Z"></path></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.1 6.3 7 1-5 4.9 1.2 6.9L12 17.8l-6.3 3.3L7 14.2l-5-4.9 7-1L12 2Z"></path></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.1 6.3 7 1-5 4.9 1.2 6.9L12 17.8l-6.3 3.3L7 14.2l-5-4.9 7-1L12 2Z"></path></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.1 6.3 7 1-5 4.9 1.2 6.9L12 17.8l-6.3 3.3L7 14.2l-5-4.9 7-1L12 2Z"></path></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.1 6.3 7 1-5 4.9 1.2 6.9L12 17.8l-6.3 3.3L7 14.2l-5-4.9 7-1L12 2Z"></path></svg></span>
+      </div>
+      <p class="review-text">The Belgian Chocolate Truffle cake was easily the best I've had in Karachi. Not overly sweet, real chocolate flavour throughout.</p>
+      <p class="review-date">2 weeks ago</p>
+    </div>
+    <div class="review-card">
+      <div class="review-top">
+        <span class="review-name">Sudais Khan :</span>
+        <span class="review-stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.1 6.3 7 1-5 4.9 1.2 6.9L12 17.8l-6.3 3.3L7 14.2l-5-4.9 7-1L12 2Z"></path></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.1 6.3 7 1-5 4.9 1.2 6.9L12 17.8l-6.3 3.3L7 14.2l-5-4.9 7-1L12 2Z"></path></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.1 6.3 7 1-5 4.9 1.2 6.9L12 17.8l-6.3 3.3L7 14.2l-5-4.9 7-1L12 2Z"></path></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.1 6.3 7 1-5 4.9 1.2 6.9L12 17.8l-6.3 3.3L7 14.2l-5-4.9 7-1L12 2Z"></path></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.1 6.3 7 1-5 4.9 1.2 6.9L12 17.8l-6.3 3.3L7 14.2l-5-4.9 7-1L12 2Z"></path></svg></span>
+      </div>
+      <p class="review-text">Their croissants are shockingly good for the price. I've started stopping by every Saturday morning.</p>
+      <p class="review-date">1 month ago</p>
+    </div>
+    <div class="review-card">
+      <div class="review-top">
+        <span class="review-name">Shoiab Imran :</span>
+        <span class="review-stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.1 6.3 7 1-5 4.9 1.2 6.9L12 17.8l-6.3 3.3L7 14.2l-5-4.9 7-1L12 2Z"></path></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.1 6.3 7 1-5 4.9 1.2 6.9L12 17.8l-6.3 3.3L7 14.2l-5-4.9 7-1L12 2Z"></path></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.1 6.3 7 1-5 4.9 1.2 6.9L12 17.8l-6.3 3.3L7 14.2l-5-4.9 7-1L12 2Z"></path></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.1 6.3 7 1-5 4.9 1.2 6.9L12 17.8l-6.3 3.3L7 14.2l-5-4.9 7-1L12 2Z"></path></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.1 6.3 7 1-5 4.9 1.2 6.9L12 17.8l-6.3 3.3L7 14.2l-5-4.9 7-1L12 2Z"></path></svg></span>
+      </div>
+      <p class="review-text">Ordered a custom birthday cake and it turned out beautifully. Would've liked a few more flavour options, but overall great.</p>
+      <p class="review-date">1 month ago</p>
+    </div>
+    <div class="review-card">
+      <div class="review-top">
+        <span class="review-name">Irzan Nazir :</span>
+        <span class="review-stars"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.1 6.3 7 1-5 4.9 1.2 6.9L12 17.8l-6.3 3.3L7 14.2l-5-4.9 7-1L12 2Z"></path></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.1 6.3 7 1-5 4.9 1.2 6.9L12 17.8l-6.3 3.3L7 14.2l-5-4.9 7-1L12 2Z"></path></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.1 6.3 7 1-5 4.9 1.2 6.9L12 17.8l-6.3 3.3L7 14.2l-5-4.9 7-1L12 2Z"></path></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.1 6.3 7 1-5 4.9 1.2 6.9L12 17.8l-6.3 3.3L7 14.2l-5-4.9 7-1L12 2Z"></path></svg><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.1 6.3 7 1-5 4.9 1.2 6.9L12 17.8l-6.3 3.3L7 14.2l-5-4.9 7-1L12 2Z"></path></svg></span>
+      </div>
+      <p class="review-text">Karak chai here genuinely rivals the roadside stalls, which is saying something. Great little café corner too.</p>
+      <p class="review-date">2 months ago</p>
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact" >
+  <div class="wrap contact-grid">
+    <div>
+      <span class="kicker">Get in touch</span>
+      <h2 style="margin-bottom:24px;">Visit, call, or write to us.</h2>
+      <div class="contact-info">
+        <div class="info-row">
+          <img src="pictures/logos/email.png" height="50px" alt="email logo" > 
+          <div><h4>Email</h4><p>hello@bakerzbite.com <span style="opacity:.6;"></span></p></div>
+        </div>
+        <div class="info-row">
+          <img src="pictures/logos/phone.png" height="50px" alt="phone logo">
+          <div><h4>Phone</h4><p>+92 300 0000000 <span style="opacity:.6;"></span></p></div>
+        </div>
+        <div class="info-row">
+          <img src="pictures/logos/address.png" height="50px" alt="address logo">
+          <div><h4>Address</h4><p>Shop 4, Main Boulevard, Karachi, Pakistan <span style="opacity:.6;"></span></p></div>
+        </div>
+        <div class="info-row">
+          <img src="pictures/logos/time.png" height="50px" alt="time logo">
+          <div><h4>Opening hours</h4><p>Daily, 8:00 AM – 11:00 PM <span style="opacity:.6;">]</span></p></div>
+        </div>
+        
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm" novalidate>
+      <h3 style="margin-bottom:18px;">Send us a message</h3>
+      <div class="field"><label for="cName">Name</label><input type="text" id="cName" required></div>
+      <div class="field"><label for="cEmail">Email</label><input type="email" id="cEmail" required></div>
+      <div class="field"><label for="cMsg">Message</label><textarea id="cMsg" required></textarea></div>
+      <button type="submit" class="btn btn-jam btn-sm" style="margin-top:18px;">Send Message</button>
+      <p class="form-msg" id="contactMsg"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ MODAL ============ -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="modal-grid">
+      <div class="modal-media" id="modalMedia"></div>
+      <div class="modal-info">
+        <h3 id="modalTitle"></h3>
+        <p class="modal-price" id="modalPrice"></p>
+        <p class="modal-desc" id="modalDesc" style="color:var(--espresso-70); font-size:.94rem; line-height:1.6;"></p>
+        <div>
+          <p class="modal-section-title">Ingredients</p>
+          <p id="modalIngredients" style="font-size:.9rem; color:var(--espresso-70); margin-top:6px;"></p>
+        </div>
+        <div>
+          <p class="modal-section-title">Details</p>
+          <div class="modal-tags" id="modalTags" style="margin-top:8px;"></div>
+        </div>
+        <div class="modal-actions">
+          <button class="btn btn-primary btn-sm btn-buy-now" id="modalBuyNow" type="button">Buy Now</button>
+          <button class="btn btn-sm btn-add-cart" id="modalAddCart" type="button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close gallery"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="m15 18-6-6 6-6"/></svg></button>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="m9 18 6-6-9-6"/></svg></button>
+  <div class="lightbox-inner">
+    <div id="lightboxImg"></div>
+    <p class="lightbox-cap" id="lightboxCap"></p>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <span class="brand-word">Bakerz <em>Bite</em></span>
+      <p>Premium baked goods, made fresh daily with real butter, real cream and unbleached flour.</p>
+    </div>
+    <div>
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="pictures/sitemap/bakerz-bite-sitemap-themed.png"> Our Sitemap</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div style="display: flex; gap: 10px;">
+        <a href="https://www.instagram.com" aria-label="Instagram" target="_blank"><img src="pictures/logos/insta.png"  height="20px" alt=""></a>
+        <a href="https://www.facebook.com" aria-label="Facebook" target="_blank"><img src="pictures/logos/fb.png" height="20px"  alt=""></a>
+        <a href="https://www.X.com" aria-label="X" target="_blank"><img src="pictures/logos/X.PNG" height="20px" alt=""></a>
+        </div>
+       </ul>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul>
+        <li>hello@bakerzbite.com</li>
+        <li>+92 300 0000000</li>
+        <li>Karachi, Pakistan</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© <span id="year"></span> Bakerz Bite. All rights reserved.</span>
+    <span>Where Smiles Are Served Daily.</span>
+  </div>
+  
+</footer>
+
+
+
+<script src="bakerz.js"></script>
+</body>
+</html>

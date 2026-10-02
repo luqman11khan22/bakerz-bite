@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description">  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Today's Offers — Bakerz Bite</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="offers">
+
+<div class="nav-scrim" id="scrim"></div>
+
+<header class="nav" id="siteNav">
+  <div class="wrap nav-inner">
+    <a href="home.html" target="_blank" class="brand">
+  <img src="pictures/logos/brand-logo.png" height="60px" alt="brand-logo">
+  <span class="brand-word">Bakerz <em>Bite</em></span>
+</a>
+    
+            <ul class="nav-links" id="navLinks">
+      <li><a href="home.html" data-nav data-page="home" target="_blank">Home</a></li>
+      <li><a href="menu.html" data-nav data-page="menu" target="_blank">Menu</a></li>
+      <li><a href="offers.html" data-nav data-page="offers" target="_blank">Offers</a></li>
+      <li><a href="about.html" data-nav data-page="about" target="_blank">About</a></li>
+      <li><a href="FAQ.html" data-nav data-page="about" target="_blank">FAQ's</a></li>
+      <li><a href="contact.html" data-nav data-page="contact" target="_blank">Contact</a></li>
+      <li><a href="order.html" data-nav data-page="order">Order Now</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <b><i>Theme</i></b>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <img src="pictures/logos/dark-theme.png" alt="dark mode">
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+  <!-- Paste this just under your navbar (or in the footer) -->
+<div class="info-bar">
+  <p class="info-item" id="greeting">Welcome to Bakerz Bite</p>
+  <p class="info-item" id="date-time">Loading time...</p>
+  <p class="info-item" id="location-text">Location not shared yet</p>
+  <button class="info-btn" id="location-btn">Use my location</button>
+</div>
+</header>
+<!-- ============ OFFERS ============ -->
+
+<section class="section" id="offers">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Today's offers</span>
+      <h2>Good deals, honestly priced.</h2>
+      <p>Rotating combos and bundles — no membership, no fine print.</p>
+    </div>
+
+    <div class="offer-grid" id="offerGrid">
+
+      <div class="offer-card">
+        <span class="offer-tag">Morning Special</span>
+        <img src="pictures/offers/croissant-danish-cappuccino..png" alt="croissant danish cappuccino.">
+        <h3>Breakfast Combo</h3>
+      
+        <p>Any croissant or danish with a signature cappuccino.</p>
+        <div class="offer-meta">
+          <span class="card-price">Rs. 950</span>
+          <span>Mon–Fri, till 11 AM</span>
+        </div>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+
+      <div class="offer-card">
+        <span class="offer-tag">Weekend</span>
+        <img src="pictures/offers/Tiramisu Cup,Dark Chocolate, Crème Brûlée, Panna Cotta.png" alt="Four handpicked desserts">
+        <h3>Weekend Dessert Box</h3>
+        <p>Four handpicked desserts, boxed and ready to share.</p>
+        <div class="offer-meta">
+          <span> <span class="card-price">Rs. 2150</span> for 4</span>
+          <span>Sat–Sun only</span>
+        </div>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+
+      <div class="offer-card">
+        <span class="offer-tag">Bundle</span>
+        <img src="pictures/offers/Buy-2-Get-1-Cookies.png" alt="any three cookies from the counter">
+        <h3>Buy 2 Get 1 — Cookies</h3>
+        <p>Mix and match any three cookies from the counter.</p>
+        <div class="offer-meta">
+         <span class="card-price">Rs. 450</span> 
+        </div>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+
+      <div class="offer-card">
+        <span class="offer-tag">Celebration</span>
+        <img src="pictures/offers/Birthday-Cake-Special.png" alt="full-size custom cake">
+        <h3>Birthday Cake Special</h3>
+        <p>20% off any full-size custom cake, ordered 48 hrs ahead.</p>
+        <div class="offer-meta">
+        <span class="card-price">Rs. 2000</span>
+          <span>With advance order</span>
+        </div>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+
+      <div class="offer-card">
+        <span class="offer-tag">Combo</span>
+        <img src="pictures/offers/Coffee-Pastry-Combo.png" alt="hot beverage paired with a pastr">
+        <h3>Coffee + Pastry Combo</h3>
+        <p>Any hot beverage paired with a pastry of your choice.</p>
+        <div class="offer-meta">
+        <span class="card-price">Rs. 700</span>
+          <span>All day, every day</span>
+        </div>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+
+      <div class="offer-card">
+        <span class="offer-tag">Seasonal</span>
+        <img src="pictures/offers/Seasonal-Harvest-Box.png" alt="pies, spiced cakes, and more.">
+        <h3>Seasonal Harvest Box</h3>
+        <p>A rotating seasonal selection — pies, spiced cakes, and more.</p>
+        <div class="offer-meta">
+          <span class="card-price">Rs. 3000</span>
+          <span>While stocks last</span>
+        </div>
+        <button class="btn btn-primary btn-sm btn-buy-now" type="button">Buy Now</button>
+        <button class="btn btn-sm btn-add-cart" type="button">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <span class="brand-word">Bakerz <em>Bite</em></span>
+      <p>Premium baked goods, made fresh daily with real butter, real cream and unbleached flour.</p>
+    </div>
+    <div>
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="pictures/sitemap/bakerz-bite-sitemap-themed.png"> Our Sitemap</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div style="display: flex; gap: 10px;">
+        <a href="https://www.instagram.com" aria-label="Instagram" target="_blank"><img src="pictures/logos/insta.png"  height="20px" alt=""></a>
+        <a href="https://www.facebook.com" aria-label="Facebook" target="_blank"><img src="pictures/logos/fb.png" height="20px"  alt=""></a>
+        <a href="https://www.X.com" aria-label="X" target="_blank"><img src="pictures/logos/X.PNG" height="20px" alt=""></a>
+        </div>
+       </ul>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul>
+        <li>hello@bakerzbite.com</li>
+        <li>+92 300 0000000</li>
+        <li>Karachi, Pakistan</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© <span id="year"></span> Bakerz Bite. All rights reserved.</span>
+    <span>Where Smiles Are Served Daily.</span>
+  </div>
+</footer>
+
+<script src="bakerz.js"></script>
+</body>
+</html>

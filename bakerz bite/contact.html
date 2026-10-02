@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description">  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Bakerz Bite</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="contact">
+
+<div class="nav-scrim" id="scrim"></div>
+
+<header class="nav" id="siteNav">
+  <div class="wrap nav-inner">
+    <a href="home.html" target="_blank" class="brand">
+  <img src="pictures/logos/brand-logo.png" height="60px" alt="brand-logo">
+  <span class="brand-word">Bakerz <em>Bite</em></span>
+</a>
+    
+            <ul class="nav-links" id="navLinks">
+      <li><a href="home.html" data-nav data-page="home" target="_blank">Home</a></li>
+      <li><a href="menu.html" data-nav data-page="menu" target="_blank">Menu</a></li>
+      <li><a href="offers.html" data-nav data-page="offers" target="_blank">Offers</a></li>
+      <li><a href="about.html" data-nav data-page="about" target="_blank">About</a></li>
+      <li><a href="FAQ.html" data-nav data-page="about" target="_blank">FAQ's</a></li>
+      <li><a href="contact.html" data-nav data-page="contact" target="_blank">Contact</a></li>
+      <li><a href="order.html" data-nav data-page="order">Order Now</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <b><i>Theme</i></b>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <img src="pictures/logos/dark-theme.png" alt="dark mode">
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+  <!-- Paste this just under your navbar (or in the footer) -->
+<div class="info-bar">
+  <p class="info-item" id="greeting">Welcome to Bakerz Bite</p>
+  <p class="info-item" id="date-time">Loading time...</p>
+  <p class="info-item" id="location-text">Location not shared yet</p>
+  <button class="info-btn" id="location-btn">Use my location</button>
+</div>
+</header>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact" >
+  <div class="wrap contact-grid">
+    <div>
+      <span class="kicker">Get in touch</span>
+      <h2 style="margin-bottom:24px;">Visit, call, or write to us.</h2>
+      <div class="contact-info">
+        <div class="info-row">
+          <img src="pictures/logos/email.png" height="50px" alt="email logo" > 
+          <div><h4>Email</h4><p>hello@bakerzbite.com <span style="opacity:.6;"></span></p></div>
+        </div>
+        <div class="info-row">
+          <img src="pictures/logos/phone.png" height="50px" alt="phone logo">
+          <div><h4>Phone</h4><p>+92 300 0000000 <span style="opacity:.6;"></span></p></div>
+        </div>
+        <div class="info-row">
+          <img src="pictures/logos/address.png" height="50px" alt="address logo">
+          <div><h4>Address</h4><p>Shop 4, Main Boulevard, Karachi, Pakistan <span style="opacity:.6;"></span></p></div>
+        </div>
+        <div class="info-row">
+          <img src="pictures/logos/time.png" height="50px" alt="time logo">
+          <div><h4>Opening hours</h4><p>Daily, 8:00 AM – 11:00 PM <span style="opacity:.6;"></span></p></div>
+        </div>
+        <!-- <div class="info-row">
+          <img src="pictures/logos/social.png" height="50px" alt="Social handles">
+          <div>
+            <h4>Follow along</h4>
+            <div class="social-row">
+              <a href="https://www.instagram.com" aria-label="Instagram" target="_blank"><img src="pictures/logos/insta.png" width="1000px"  alt=""></a>
+              <a href="https://www.facebook.com" aria-label="Facebook" target="_blank"><img src="pictures/logos/fb.png" alt=""></a>
+              <a href="https://www.X.com" aria-label="X" target="_blank"><img src="pictures/logos/X.PNG" alt=""></a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm" novalidate>
+      <h3 style="margin-bottom:18px;">Send us a message</h3>
+      <div class="field"><label for="cName">Name</label><input type="text" id="cName" required></div>
+      <div class="field"><label for="cEmail">Email</label><input type="email" id="cEmail" required></div>
+      <div class="field"><label for="cMsg">Message</label><textarea id="cMsg" required></textarea></div>
+      <button type="submit" class="btn btn-jam btn-sm" style="margin-top:18px;">Send Message</button>
+      <p class="form-msg" id="contactMsg"></p>
+    </form>
+  </div>
+</section>
+
+
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <span class="brand-word">Bakerz <em>Bite</em></span>
+      <p>Premium baked goods, made fresh daily with real butter, real cream and unbleached flour.</p>
+    </div>
+    <div>
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="pictures/sitemap/bakerz-bite-sitemap-themed.png"> Our Sitemap</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div style="display: flex; gap: 10px;">
+        <a href="https://www.instagram.com" aria-label="Instagram" target="_blank"><img src="pictures/logos/insta.png"  height="20px" alt=""></a>
+        <a href="https://www.facebook.com" aria-label="Facebook" target="_blank"><img src="pictures/logos/fb.png" height="20px"  alt=""></a>
+        <a href="https://www.X.com" aria-label="X" target="_blank"><img src="pictures/logos/X.PNG" height="20px" alt=""></a>
+        </div>
+       </ul>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul>
+        <li>hello@bakerzbite.com</li>
+        <li>+92 300 0000000</li>
+        <li>Karachi, Pakistan</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© <span id="year"></span> Bakerz Bite. All rights reserved.</span>
+    <span>Where Smiles Are Served Daily.</span>
+  </div>
+</footer>
+
+<script src="bakerz.js"></script>
+</body>
+</html>
